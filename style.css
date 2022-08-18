@@ -2,10 +2,9 @@ body {
   padding: 0px;
   margin: 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  flex-direction: column
 }
-.margin-reset{
+.margin-reset {
     margin: 0px;
 }
 #toolbar {
@@ -26,7 +25,6 @@ body {
   background: #1C1A19;
   padding: 17vh 3vh;
   position: relative;
-  height: 100vh;
 }
 #background-image {
   position: absolute;
@@ -47,4 +45,17 @@ body {
   font-size: 24px;
   color: #FFF5E1;
   position: relative;
+}
+.headline-desc {
+  font-family: 'Poppins';
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#social-media {
+  margin: 4vh 1vh;
+}
+#social-media a {
+  margin: 0vh 0.5vh;
 }
