@@ -3,3 +3,4 @@ node_modules/
 .hintrc
 package-lock.json
 package.json
+.stylelintrc.json
