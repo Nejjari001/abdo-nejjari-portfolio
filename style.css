@@ -28,3 +28,9 @@ body {
   color: #FF6B00;
   font-size: 56px;
 }
+.sub-heading {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFF5E1;
+}
