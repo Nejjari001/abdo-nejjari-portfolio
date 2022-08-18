@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+.padding-reset {
+  padding: 0;
+}
+
 #toolbar {
   background: #3c3a39;
   display: flex;
@@ -23,6 +27,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  text-decoration: none;
 }
 
 #headline {
@@ -65,6 +70,8 @@ body {
 
 #social-media {
   margin: 4vh 1vh;
+  list-style: none;
+  display: flex;
 }
 
 #social-media a {
