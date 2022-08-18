@@ -1,31 +1,36 @@
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
+
 .margin-reset {
-    margin: 0px;
+  margin: 0;
 }
+
 #toolbar {
-  background: #3C3A39;
+  background: #3c3a39;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2vh 4vh;
 }
+
 #logo {
-  color: #FFFFFF;
-  font-family: 'Roboto';
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
+
 #headline {
-  background: #1C1A19;
+  background: #1c1a19;
   padding: 17vh 3vh;
   position: relative;
 }
+
 #background-image {
   position: absolute;
   top: 160px;
@@ -33,29 +38,34 @@ body {
   transform: rotate(359deg);
   z-index: 1;
 }
+
 #heading {
-  font-family: 'Crete Round';
-  color: #FF6B00;
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
   font-size: 56px;
   position: relative;
 }
+
 .sub-heading {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 24px;
-  color: #FFF5E1;
+  color: #fff5e1;
   position: relative;
 }
+
 .headline-desc {
-  font-family: 'Poppins';
-  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
+
 #social-media {
   margin: 4vh 1vh;
 }
+
 #social-media a {
-  margin: 0vh 0.5vh;
+  margin: 0 0.5vh;
 }
