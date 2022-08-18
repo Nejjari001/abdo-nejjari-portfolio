@@ -1,6 +1,9 @@
 body {
   padding: 0px;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 .margin-reset{
     margin: 0px;
@@ -20,17 +23,28 @@ body {
   font-size: 18px;
 }
 #headline {
-  background: #1C1A19 url("./img/illustration-header.png");
+  background: #1C1A19;
   padding: 17vh 3vh;
+  position: relative;
+  height: 100vh;
+}
+#background-image {
+  position: absolute;
+  top: 160px;
+  right: -1px;
+  transform: rotate(359deg);
+  z-index: 1;
 }
 #heading {
   font-family: 'Crete Round';
   color: #FF6B00;
   font-size: 56px;
+  position: relative;
 }
 .sub-heading {
   font-family: 'Roboto';
   font-weight: bold;
   font-size: 24px;
   color: #FFF5E1;
+  position: relative;
 }
