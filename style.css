@@ -2,18 +2,29 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.margin-reset{
+    margin: 0px;
+}
 #toolbar {
   background: #3C3A39;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4vw 8vw;
+  padding: 2vh 4vh;
 }
-#logo{
-  margin: 0px;
+#logo {
   color: #FFFFFF;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+}
+#headline {
+  background: #1C1A19 url("./img/illustration-header.png");
+  padding: 17vh 3vh;
+}
+#heading {
+  font-family: 'Crete Round';
+  color: #FF6B00;
+  font-size: 56px;
 }
