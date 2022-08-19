@@ -67,3 +67,94 @@ body {
 #social-media a {
   margin: 0 0.5vh;
 }
+
+#works {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  padding: 17vh 0;
+}
+
+#works-heading {
+  color: #1C1A19;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 4vh;
+  margin-bottom: 15vh;
+}
+
+.card-header {
+  font-family: 'Crete Round';
+  font-size: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.card-desc {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-badges {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.card-badges > li {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  padding: 2vh;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.card-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 2vh;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  margin: 0vh 0;
+}
+
+#last-work {
+  display: flex;
+  flex-direction: column;
+}
+
+#last-work > h2 {
+  color: #091e42;
+}
+
+#last-work > p {
+  color: #091e42;
+}
+
+#last-work > ul > li {
+  color: #091e42;
+  border: 1px solid #8993a4;
+}
+
+#last-work > a {
+  width: 18vh;
+  margin: 2vh 0;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;  
+}
+
+.work > div {
+  background: url('./img/Img-placeholder2.jpg') no-repeat;
+  background-size: cover;
+  padding: 3vh;
+}
