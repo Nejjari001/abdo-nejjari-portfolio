@@ -31,24 +31,15 @@ body {
 }
 
 #headline {
-  background: #1c1a19;
+  background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
+  background-size: 147px 360px;
   padding: 17vh 3vh;
-  position: relative;
-}
-
-#background-image {
-  position: absolute;
-  top: 220px;
-  right: -1px;
-  transform: rotate(359deg);
-  z-index: 1;
 }
 
 #heading {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
   font-size: 56px;
-  position: relative;
   font-weight: 400;
 }
 
@@ -57,7 +48,6 @@ body {
   font-weight: bold;
   font-size: 24px;
   color: #fff5e1;
-  position: relative;
 }
 
 .headline-desc {
