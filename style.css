@@ -58,13 +58,13 @@ body {
   line-height: 24px;
 }
 
-#social-media {
+.social-media {
   margin: 4vh 1vh;
   list-style: none;
   display: flex;
 }
 
-#social-media a {
+.social-media a {
   margin: 0 0.5vh;
 }
 
@@ -122,14 +122,26 @@ body {
   font-size: 17px;
   text-align: center;
   font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #ff6b00;
 }
 
 .card-button:hover {
-  opacity: 0.8;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .card-button:active {
-  background: #a06b00;
+  background: #e05304;
+  color: #fff;
+}
+
+.card-button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: none;
+  cursor: none;
 }
 
 #last-work {
@@ -208,6 +220,17 @@ body {
   font-weight: 500;
 }
 
+#contact ul {
+  align-self: center;
+  margin: 0 85vh;
+  margin-top: 25vh;
+  border-top: 1px solid #dbd8d7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3vh;
+}
+
 #about-me > ul > li > ul {
   margin: 5vh 0;
   padding: 0;
@@ -229,4 +252,65 @@ body {
 
 .aboutme-li3 {
   list-style: square inside url('./img/rectangle2.png');
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h2 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32.5px;
+  color: #172b4d;
+  margin: 24vh 4vh;
+  margin-bottom: 10vh;
+  align-self: center;
+  line-height: 44px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+input {
+  margin: 20px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 2vh;
+  color: #979493;
+  font-family: 'Inter', sans-serif;
+}
+
+#contact form > button {
+  margin-top: 5vh;
+  align-self: center;
+  padding: 3vh 4vh;
+}
+
+textarea {
+  margin: 0 20px;
+  min-height: 100px;
+  resize: vertical;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  padding: 2vh;
+  background: #fbf8f7;
+}
+
+.blck-line {
+  border-bottom: 4px solid #0d151e;
+  border-radius: 4px;
+  width: 25vh;
+  align-self: center;
+  margin-bottom: 1vh;
 }
