@@ -58,13 +58,13 @@ body {
   line-height: 24px;
 }
 
-#social-media {
+.social-media {
   margin: 4vh 1vh;
   list-style: none;
   display: flex;
 }
 
-#social-media a {
+.social-media a {
   margin: 0 0.5vh;
 }
 
@@ -208,6 +208,17 @@ body {
   font-weight: 500;
 }
 
+#contact ul {
+  align-self: center;
+  margin: 0 85vh;
+  margin-top: 25vh;
+  border-top: 1px solid #dbd8d7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3vh;
+}
+
 #about-me > ul > li > ul {
   margin: 5vh 0;
   padding: 0;
@@ -238,10 +249,10 @@ body {
 
 #contact h2 {
   text-align: center;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: #172B4D;
+  color: #172b4d;
   margin: 24vh 4vh;
   margin-bottom: 10vh;
   align-self: center;
@@ -264,7 +275,7 @@ input {
   border-bottom: 1px solid #dbd8d7;
   padding: 2vh;
   color: #979493;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
 }
 
 button {
@@ -281,19 +292,7 @@ textarea {
   min-height: 100px;
   resize: vertical;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   padding: 2vh;
   background: #fbf8f7;
 }
-
-#contact ul {
-  align-self: center;
-  margin: 0 85vh;
-  margin-top: 25vh;
-  border-top: 1px solid #dbd8d7;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 3vh;
-}
-
