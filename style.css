@@ -122,14 +122,26 @@ body {
   font-size: 17px;
   text-align: center;
   font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #ff6b00;
 }
 
 .card-button:hover {
-  opacity: 0.8;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .card-button:active {
-  background: #a06b00;
+  background: #e05304;
+  color: #fff;
+}
+
+.card-button:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: none;
+  cursor: none;
 }
 
 #last-work {
@@ -251,11 +263,12 @@ body {
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 32.5px;
   color: #172b4d;
   margin: 24vh 4vh;
   margin-bottom: 10vh;
   align-self: center;
+  line-height: 44px;
 }
 
 form {
@@ -278,13 +291,10 @@ input {
   font-family: 'Inter', sans-serif;
 }
 
-button {
-  margin-top: 20px;
-  width: 131px;
-  height: 48px;
+#contact form > button {
+  margin-top: 5vh;
   align-self: center;
-  padding: 5px;
-  border: none;
+  padding: 3vh 4vh;
 }
 
 textarea {
@@ -295,4 +305,12 @@ textarea {
   font-family: 'Inter', sans-serif;
   padding: 2vh;
   background: #fbf8f7;
+}
+
+.blck-line {
+  border-bottom: 4px solid #0d151e;
+  border-radius: 4px;
+  width: 25vh;
+  align-self: center;
+  margin-bottom: 1vh;
 }
