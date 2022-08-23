@@ -102,7 +102,7 @@ body {
 .card-badges {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 90%;
 }
 
@@ -111,6 +111,7 @@ body {
   color: #fff;
   padding: 2vh;
   background: rgba(255, 255, 255, 0.24);
+  margin: 0 1%;
 }
 
 .card-button {
