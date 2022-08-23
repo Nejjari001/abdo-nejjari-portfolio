@@ -242,6 +242,9 @@ body {
   font-weight: 700;
   font-size: 32px;
   color: #172B4D;
+  margin: 24vh 4vh;
+  margin-bottom: 10vh;
+  align-self: center;
 }
 
 form {
@@ -258,6 +261,10 @@ fieldset {
 input {
   margin: 20px;
   border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 2vh;
+  color: #979493;
+  font-family: 'Inter';
 }
 
 button {
@@ -266,15 +273,27 @@ button {
   height: 48px;
   align-self: center;
   padding: 5px;
+  border: none;
 }
 
 textarea {
   margin: 0 20px;
   min-height: 100px;
-  overflow: scroll
+  resize: vertical;
+  border: none;
+  font-family: 'Inter';
+  padding: 2vh;
+  background: #fbf8f7;
 }
 
 #contact ul {
   align-self: center;
+  margin: 0 85vh;
+  margin-top: 25vh;
+  border-top: 1px solid #dbd8d7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3vh;
 }
 
