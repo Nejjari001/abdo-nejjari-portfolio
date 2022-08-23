@@ -62,6 +62,7 @@ body {
   margin: 4vh 1vh;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-media a {
@@ -103,7 +104,6 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
 }
 
 .card-badges > li {
@@ -111,7 +111,7 @@ body {
   color: #fff;
   padding: 2vh;
   background: rgba(255, 255, 255, 0.24);
-  margin: 0 1%;
+  margin: 0.5% 1%;
 }
 
 .card-button {
