@@ -230,3 +230,51 @@ body {
 .aboutme-li3 {
   list-style: square inside url('./img/rectangle2.png');
 }
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact h2 {
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  color: #172B4D;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+input {
+  margin: 20px;
+  border: none;
+}
+
+button {
+  margin-top: 20px;
+  width: 131px;
+  height: 48px;
+  align-self: center;
+  padding: 5px;
+}
+
+textarea {
+  margin: 0 20px;
+  min-height: 100px;
+  overflow: scroll
+}
+
+#contact ul {
+  align-self: center;
+}
+
