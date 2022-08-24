@@ -9,6 +9,10 @@ body {
   flex-direction: column;
 }
 
+.hide {
+  display: none;
+}
+
 .margin-reset {
   margin: 0;
 }
@@ -110,11 +114,10 @@ body {
 
 #headline {
   background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
-  background-size: 147px 360px;
-  padding: 20% 4%;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 5%;
+  background-size: 147px 300px;
+  padding: 30% 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 #heading {
@@ -129,6 +132,7 @@ body {
   font-size: 24px;
   color: #fff5e1;
   font-weight: 500;
+  margin: 10px 0;
 }
 
 .headline-desc {
@@ -330,6 +334,9 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .hide-desk {
+    display: none;
+  }
   #toolbar {
     padding: 2% 3%;
   }
@@ -362,10 +369,12 @@ body {
     background: #1c1a19 url('./img/Illustration-header2.png') no-repeat right top;
     background-size: auto 95%;
     padding: 10% 1%;
+    display: grid;
     grid-template-columns: auto 45%;
     grid-template-rows: auto auto auto;
     justify-content: start;
     align-items: center;
+    column-gap: 5%;
   }
 
   #headline > .social-media {
@@ -383,9 +392,12 @@ body {
 
   #works {
     padding: 8% 5%;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
   }
 
   #works > header {
+    grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: max-content auto;
     align-items: center;
@@ -398,6 +410,8 @@ body {
 
   #last-work {
     flex-direction: row;
+    grid-column: 1 / span 3;
+    margin-bottom: 15px;
   }
 
   #last-work img {
@@ -405,5 +419,29 @@ body {
   width: calc(55% - 10px);
   margin: 10px;
   }
-  
+
+  .work > div{
+    padding: 50% 15px 20px 15px;
+    height: 100%;
+  }
+
+  .background0 {
+    background: url('./img/background0.png') no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+
+  .background0 h2, .background0 p, .background0 ul {
+    display: none;
+  }
+
+  .background1 {
+    background: url('./img/card-background1.jpg') no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+
+  .background2 {
+    background: url('./img/card-background2.jpg') no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+
 }
