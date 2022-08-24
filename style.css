@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -18,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 4vh;
+  padding: 3% 6%;
 }
 
 #logo {
@@ -33,7 +37,7 @@ body {
 #headline {
   background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
   background-size: 147px 360px;
-  padding: 17vh 3vh;
+  padding: 20% 4%;
 }
 
 #heading {
@@ -59,21 +63,21 @@ body {
 }
 
 .social-media {
-  margin: 4vh 1vh;
+  margin: 5% 1%;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
 .social-media a {
-  margin: 0 0.5vh;
+  margin: 0 5px;
 }
 
 #works {
   display: grid;
   grid-template-columns: 90%;
   justify-content: center;
-  padding: 17vh 0;
+  padding: 24% 0;
 }
 
 #works-heading {
@@ -82,8 +86,8 @@ body {
   font-size: 40px;
   font-weight: 500;
   border-bottom: 1px solid #212121;
-  padding-bottom: 4vh;
-  margin-bottom: 15vh;
+  padding-bottom: 5%;
+  margin-bottom: 25%;
 }
 
 .card-header {
@@ -109,7 +113,7 @@ body {
 .card-badges > li {
   font-family: 'Inter', sans-serif;
   color: #fff;
-  padding: 2vh;
+  padding: 8px;
   background: rgba(255, 255, 255, 0.24);
   margin: 0.5% 1%;
 }
@@ -117,7 +121,7 @@ body {
 .card-button {
   text-decoration: none;
   color: #fff;
-  padding: 2vh;
+  padding: 14px 8px;
   background: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -164,7 +168,7 @@ body {
 }
 
 #last-work > a {
-  width: 18vh;
+  width: 120px;
   margin: 2vh 0;
 }
 
@@ -176,7 +180,7 @@ body {
 .work > div {
   background: url('./img/Img-placeholder2.jpg') no-repeat;
   background-size: cover;
-  padding: 3vh;
+  padding: 15px;
 }
 
 #about-me {
@@ -187,7 +191,8 @@ body {
 }
 
 #about-me header {
-  padding: 30vh 5vh;
+  padding: 30% 5%;
+  padding-bottom: 60%;
   border-bottom: 1px solid #fff;
   background: url('./img/frame.png') no-repeat right bottom;
 }
