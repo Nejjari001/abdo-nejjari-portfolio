@@ -17,53 +17,6 @@ body {
   padding: 0;
 }
 
-#toolbar {
-  background: #3c3a39;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 6%;
-}
-
-#logo {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-#headline {
-  background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
-  background-size: 147px 360px;
-  padding: 20% 4%;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 5%;
-}
-
-#heading {
-  font-family: 'Crete Round', serif;
-  color: #ff6b00;
-  font-size: 56px;
-  font-weight: 400;
-}
-
-.sub-heading {
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  color: #fff5e1;
-  font-weight: 500;
-}
-
-.headline-desc {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 300;
-}
-
 .social-media {
   margin: 5% 1%;
   list-style: none;
@@ -73,27 +26,6 @@ body {
 
 .social-media > li > a {
   margin: 0 5px;
-}
-
-#works {
-  display: grid;
-  grid-template-columns: 90%;
-  justify-content: center;
-  padding: 24% 0;
-}
-
-#works-heading {
-  color: #091e42;
-  font-family: 'Crete Round', sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-  padding-bottom: 5%;
-}
-
-#works > header > .h-line {
-  width: auto;
-  border-bottom: 0.5px solid #857f7f;
-  margin-bottom: 25%;
 }
 
 .card-header {
@@ -155,25 +87,103 @@ body {
   cursor: none;
 }
 
+#toolbar {
+  background: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 6%;
+}
+
+#logo {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#nav-list {
+  display: none;
+}
+
+#headline {
+  background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
+  background-size: 147px 360px;
+  padding: 20% 4%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5%;
+}
+
+#heading {
+  font-family: 'Crete Round', serif;
+  color: #ff6b00;
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #fff5e1;
+  font-weight: 500;
+}
+
+.headline-desc {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#works {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  padding: 24% 0;
+}
+
+#works-heading {
+  color: #091e42;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5%;
+}
+
+#works > header > .h-line {
+  border-bottom: 0.5px solid #857f7f;
+  margin-bottom: 25%;
+}
+
 #last-work {
   display: flex;
   flex-direction: column;
 }
 
-#last-work > h2 {
-  color: #091e42;
+#last-work > .card-body {
+  display: flex;
+  flex-direction: column;
 }
 
-#last-work > p {
+#last-work > .card-body > h2 {
   color: #091e42;
+  margin: 10px 0;
 }
 
-#last-work > ul > li {
+#last-work > .card-body > p {
+  color: #091e42;
+  margin-bottom: 10px;
+}
+
+#last-work > .card-body > ul > li {
   color: #091e42;
   border: 1px solid #8993a4;
 }
 
-#last-work > a {
+#last-work > .card-body > a {
   width: 120px;
   margin: 2vh 0;
 }
@@ -232,7 +242,7 @@ body {
   font-weight: 500;
 }
 
-#contact ul {
+#contact > ul {
   align-self: center;
   margin: 0 85vh;
   margin-top: 25vh;
@@ -271,7 +281,7 @@ body {
   flex-direction: column;
 }
 
-#contact h2 {
+#contact > header > h2 {
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -283,18 +293,18 @@ body {
   line-height: 44px;
 }
 
-#contact form {
+#contact-form {
   display: flex;
   flex-direction: column;
 }
 
-#contact form > fieldset {
+#contact-form > fieldset {
   display: flex;
   flex-direction: column;
   border: none;
 }
 
-#contact form > input {
+#contact-form > fieldset > input {
   margin: 20px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
@@ -303,13 +313,13 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-#contact form > button {
+#contact-form > button {
   margin-top: 5vh;
   align-self: center;
   padding: 3vh 4vh;
 }
 
-#contact form > textarea {
+#contact-form > fieldset > textarea {
   margin: 0 20px;
   min-height: 100px;
   resize: vertical;
@@ -317,10 +327,6 @@ body {
   font-family: 'Inter', sans-serif;
   padding: 2vh;
   background: #fbf8f7;
-}
-
-#nav-list {
-  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -336,7 +342,7 @@ body {
     display: block;
   }
 
-  #nav-list ul{
+  #nav-list ul {
     font-size: 1rem;
     list-style: none;
     display: flex;
@@ -376,25 +382,28 @@ body {
   }
 
   #works {
-    padding: 12% 5%;
+    padding: 8% 5%;
   }
 
   #works > header {
     display: grid;
-    grid-template-columns: auto 30%;
+    grid-template-columns: max-content auto;
     align-items: center;
+    gap: 10px;
   }
 
-  #header > header > .h-line {
-
+  #works > header > .h-line {
+    margin: 0;
   }
 
   #last-work {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   #last-work img {
-    flex: 50%;
+  height: calc(100% - 10px);
+  width: calc(55% - 10px);
+  margin: 10px;
   }
+  
 }
