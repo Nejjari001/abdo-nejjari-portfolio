@@ -312,11 +312,3 @@ textarea {
   padding: 2vh;
   background: #fbf8f7;
 }
-
-.blck-line {
-  border-bottom: 4px solid #0d151e;
-  border-radius: 4px;
-  width: 25vh;
-  align-self: center;
-  margin-bottom: 1vh;
-}
