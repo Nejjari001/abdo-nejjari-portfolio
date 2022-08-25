@@ -172,13 +172,13 @@ body {
   flex-direction: column;
 }
 
-#about-me > h2 {
+#about-me > header > h2 {
   color: #ff6b00;
-  font-size: 72px;
+  font-size: 62px;
   margin: 0;
 }
 
-#about-me > p {
+#about-me > header > p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 7vh;
@@ -379,7 +379,7 @@ body {
   #headline {
     background: #1c1a19 url('./img/Illustration-header2.png') no-repeat right top;
     background-size: auto 95%;
-    padding: 10% 1%;
+    padding: 15% 1%;
     display: grid;
     grid-template-columns: auto 45%;
     grid-template-rows: auto auto auto;
