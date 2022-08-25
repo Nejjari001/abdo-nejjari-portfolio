@@ -232,12 +232,8 @@ body {
 .work {
   display: flex;
   flex-direction: column;
-}
-
-.work > div {
   background: url('./img/Img-placeholder2.jpg') no-repeat;
-  background-size: cover;
-  padding: 15px;
+  background-size: 100% 100%;
 }
 
 #about-me {
@@ -337,6 +333,46 @@ body {
     display: none;
   }
 
+  .work > div {
+    padding: 50% 15px 20px 15px;
+    height: 100%;
+  }
+
+  .background1 {
+    background: url('./img/card-background1.jpg') no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+
+  .background2 {
+    background: url('./img/card-background2.jpg') no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+
+  .work {
+    position: relative;
+  }
+
+  .work > a {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .work:hover {
+    cursor: pointer;
+  }
+
+  .work:hover > div > h2,
+  .work:hover > div > p,
+  .work:hover > div > ul {
+    visibility: hidden;
+  }
+
+  .work:hover > a {
+    visibility: visible;
+  }
+
   #toolbar {
     padding: 20px 10%;
   }
@@ -347,12 +383,6 @@ body {
 
   #nav-list {
     display: block;
-  }
-
-  .background0 h2,
-  .background0 p,
-  .background0 ul {
-    display: none;
   }
 
   #nav-list ul {
@@ -429,26 +459,6 @@ body {
     height: calc(100% - 10px);
     width: calc(55% - 10px);
     margin: 10px;
-  }
-
-  .work > div {
-    padding: 50% 15px 20px 15px;
-    height: 100%;
-  }
-
-  .background0 {
-    background: url('./img/background0.png') no-repeat !important;
-    background-size: 100% 100% !important;
-  }
-
-  .background1 {
-    background: url('./img/card-background1.jpg') no-repeat !important;
-    background-size: 100% 100% !important;
-  }
-
-  .background2 {
-    background: url('./img/card-background2.jpg') no-repeat !important;
-    background-size: 100% 100% !important;
   }
 
   #about-me header {
