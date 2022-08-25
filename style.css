@@ -226,7 +226,7 @@ body {
 #about-me p {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 5vh;
+  margin-bottom: 7vh;
 }
 
 #about-me ul {
@@ -443,5 +443,39 @@ body {
     background: url('./img/card-background2.jpg') no-repeat !important;
     background-size: 100% 100% !important;
   }
+
+  #about-me header {
+    padding: 10% 10%;
+    padding-bottom: 20%;
+    border-bottom: 1px solid #fff;
+    background: url('./img/illustration-about-me.png') no-repeat right;
+    background-size: 40% 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-me > header > p, #about-me > header > h2{
+    width: 50%;
+  }
+
+  #about-me > header > a {
+    width: 180px;
+  }
+
+  #about-me > ul {
+    flex-direction: row;
+    margin: 25vh 0;
+    padding: 0;
+    column-gap: 5%;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  #about-me > ul > li > ul {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  
 
 }
