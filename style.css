@@ -315,6 +315,11 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+#contact-form > fieldset > input:hover::placeholder {
+  transform: translate(20px, 0);
+  transition-duration: 2s;
+}
+
 #contact-form > button {
   margin-top: 5vh;
   align-self: center;
