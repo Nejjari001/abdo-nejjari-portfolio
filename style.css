@@ -71,6 +71,9 @@ body {
   font-weight: 500;
   cursor: pointer;
   border: 1px solid #ff6b00;
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .card-button:hover {
@@ -310,6 +313,11 @@ body {
   padding: 2vh;
   color: #979493;
   font-family: 'Inter', sans-serif;
+}
+
+#contact-form > fieldset > input:hover::placeholder {
+  transform: translate(20px, 0);
+  transition-duration: 2s;
 }
 
 #contact-form > button {
