@@ -71,6 +71,9 @@ body {
   font-weight: 500;
   cursor: pointer;
   border: 1px solid #ff6b00;
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .card-button:hover {
