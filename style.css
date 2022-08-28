@@ -34,7 +34,7 @@ body {
 
 .card-header {
   font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 400;
   color: #fff;
 }
@@ -42,7 +42,7 @@ body {
 .card-desc {
   color: #fff;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -57,11 +57,12 @@ body {
   color: #fff;
   padding: 8px;
   background: rgba(255, 255, 255, 0.24);
-  margin: 0.5% 1%;
+  margin: 5px 5px 5px 0;
 }
 
 .card-button {
   text-decoration: none;
+  display: inline-block;
   color: #fff;
   padding: 14px 8px;
   background: #ff6b00;
@@ -99,7 +100,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3% 6%;
+  padding: 15px 6%;
 }
 
 #logo {
@@ -107,7 +108,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
@@ -118,7 +119,7 @@ body {
 #headline {
   background: #1c1a19 url('./img/illustration-header.png') no-repeat right bottom;
   background-size: 147px 300px;
-  padding: 30% 4%;
+  padding: 30% 5%;
   display: flex;
   flex-direction: column;
 }
@@ -126,22 +127,22 @@ body {
 #heading {
   font-family: 'Crete Round', serif;
   color: #ff6b00;
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
-.sub-heading {
+#headline > .sub-heading {
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fff5e1;
   font-weight: 500;
   margin: 10px 0;
 }
 
-.headline-desc {
+#headline > .headline-desc {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -170,46 +171,14 @@ body {
   flex-direction: column;
 }
 
+#last-work > img {
+  max-height: auto;
+  max-width: 100%;
+}
+
 #last-work > .card-body {
   display: flex;
   flex-direction: column;
-}
-
-#about-me > header > h2 {
-  color: #ff6b00;
-  font-size: 62px;
-  margin: 0;
-}
-
-#about-me > header > p {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 7vh;
-}
-
-#about-me > ul > li {
-  font-size: 32px;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  text-align: center;
-  margin: 3vh 0;
-  font-weight: 500;
-}
-
-#about-me > ul > li > ul > li {
-  margin: 2vh 0;
-}
-
-#contact > header > h2 {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 32.5px;
-  color: #172b4d;
-  margin: 24vh 4vh;
-  margin-bottom: 10vh;
-  align-self: center;
-  line-height: 44px;
 }
 
 #last-work > .card-body > h2 {
@@ -229,14 +198,18 @@ body {
 
 #last-work > .card-body > a {
   width: 120px;
-  margin: 2vh 0;
+  margin: 5px 0;
 }
 
-.work {
+#works > .work {
   display: flex;
   flex-direction: column;
   background: url('./img/Img-placeholder2.jpg') no-repeat;
   background-size: 100% 100%;
+}
+
+#works > .work > div {
+  padding: 30px 15px 10px 15px;
 }
 
 #about-me {
@@ -253,46 +226,75 @@ body {
   background: url('./img/frame.png') no-repeat right bottom;
 }
 
+/* Disabling Stylelint specificity calculator for triggering false alarms */
+/* stylelint-disable no-descending-specificity */
+
+#about-me > header > h2 {
+  color: #ff6b00;
+  font-size: 3.875rem;
+  margin: 0;
+}
+
+#about-me > header > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 20px 0 25px 0;
+}
+
 #about-me ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin: 25vh 0;
+  margin: 40% 0;
   padding: 0;
 }
 
-#contact > ul {
-  align-self: center;
-  margin-top: 25vh;
-  border-top: 1px solid #dbd8d7;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 3vh;
+#about-me > ul > li {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 5% 0;
+  font-weight: 500;
 }
 
 #about-me > ul > li > ul {
-  margin: 5vh 0;
+  margin: 10% 0;
   padding: 0;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
-.aboutme-li1 {
+#about-me > ul > li > ul > li {
+  margin: 5% 0;
+}
+
+#about-me > ul > .aboutme-li1 {
   list-style: square inside url('./img/rectangle3.png');
 }
 
-.aboutme-li2 {
+#about-me > ul > .aboutme-li2 {
   list-style: square inside url('./img/rectangle.png');
 }
 
-.aboutme-li3 {
+#about-me > ul > .aboutme-li3 {
   list-style: square inside url('./img/rectangle2.png');
 }
 
 #contact {
   display: flex;
   flex-direction: column;
+}
+
+#contact > header > h2 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #172b4d;
+  margin: 30% 10% 10% 10%;
+  align-self: center;
+  line-height: 44px;
 }
 
 #contact-form {
@@ -310,7 +312,7 @@ body {
   margin: 20px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
-  padding: 2vh;
+  padding: 10px;
   color: #979493;
   font-family: 'Inter', sans-serif;
 }
@@ -320,30 +322,43 @@ body {
   transition-duration: 2s;
 }
 
-#contact-form > button {
-  margin-top: 5vh;
-  align-self: center;
-  padding: 3vh 4vh;
-}
-
 #contact-form > fieldset > textarea {
   margin: 0 20px;
   min-height: 100px;
   resize: vertical;
   border: none;
   font-family: 'Inter', sans-serif;
-  padding: 2vh;
+  padding: 10px;
   background: #fbf8f7;
+  overflow-x: hidden;
 }
+
+#contact-form > fieldset > textarea:hover::placeholder {
+  transform: translate(20px, 0);
+  transition-duration: 2s;
+}
+
+#contact-form > button {
+  margin-top: 10%;
+  align-self: center;
+  padding: 15px;
+}
+
+#contact > ul {
+  align-self: center;
+  margin-top: 30%;
+  border-top: 1px solid #dbd8d7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* stylelint-enable no-descending-specificity */
 
 @media only screen and (min-width: 768px) {
   .hide-desk {
     display: none;
-  }
-
-  .work > div {
-    padding: 50% 15px 20px 15px;
-    height: 100%;
   }
 
   .background1 {
@@ -356,33 +371,12 @@ body {
     background-size: 100% 100% !important;
   }
 
-  .work {
-    position: relative;
-  }
-
-  .work > a {
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .work:hover {
-    cursor: pointer;
-  }
-
-  .work:hover > div > h2,
-  .work:hover > div > p,
-  .work:hover > div > ul {
-    visibility: hidden;
-  }
-
-  .work:hover > a {
-    visibility: visible;
-  }
-
   #toolbar {
     padding: 20px 10%;
+  }
+
+  #logo {
+    font-size: 1.5rem;
   }
 
   #nav-button {
@@ -393,7 +387,7 @@ body {
     display: block;
   }
 
-  #nav-list ul {
+  #nav-list > ul {
     font-size: 1rem;
     list-style: none;
     display: flex;
@@ -405,10 +399,6 @@ body {
     margin: 0 15px;
   }
 
-  #about-me > header > a {
-    width: 180px;
-  }
-
   #nav-list > ul > li > a {
     color: #fff;
     text-decoration: none;
@@ -416,10 +406,10 @@ body {
 
   #headline {
     background: #1c1a19 url('./img/Illustration-header2.png') no-repeat right top;
-    background-size: auto 95%;
+    background-size: 45% 95%;
     padding: 15% 1%;
     display: grid;
-    grid-template-columns: auto 45%;
+    grid-template-columns: 4% 35%;
     grid-template-rows: auto auto auto;
     justify-content: start;
     align-items: center;
@@ -437,10 +427,11 @@ body {
 
   #headline > h1 {
     font-size: 3.5rem;
+    white-space: pre-line;
   }
 
   #works {
-    padding: 8% 5%;
+    padding: 8% 10%;
     grid-template-columns: auto auto auto;
     gap: 10px;
   }
@@ -463,13 +454,43 @@ body {
     margin-bottom: 15px;
   }
 
-  #last-work img {
-    height: calc(100% - 10px);
-    width: calc(55% - 10px);
-    margin: 10px;
+  #last-work > img {
+    max-height: auto;
+    max-width: calc(44% - 10px);
+    margin: 0 10px 0 0;
   }
 
-  #about-me header {
+  #works > .work {
+    position: relative;
+  }
+
+  #works > .work > div {
+    padding: 50% 15px 20px 15px;
+    height: 100%;
+  }
+
+  #works > .work > a {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  #works > .work:hover {
+    cursor: pointer;
+  }
+
+  #works > .work:hover > div > h2,
+  #works > .work:hover > div > p,
+  #works > .work:hover > div > ul {
+    visibility: hidden;
+  }
+
+  #works > .work:hover > a {
+    visibility: visible;
+  }
+
+  #about-me > header {
     padding: 10% 10%;
     padding-bottom: 20%;
     border-bottom: 1px solid #fff;
@@ -479,24 +500,25 @@ body {
     flex-direction: column;
   }
 
+  /* Disabling Stylelint specificity calculator for triggering false alarms */
+  /* stylelint-disable no-descending-specificity */
+
   #about-me > header > p,
   #about-me > header > h2 {
-    width: 50%;
+    width: 44%;
+  }
+
+  #about-me > header > a {
+    width: fit-content;
   }
 
   #about-me > ul {
     flex-direction: row;
-    margin: 25vh 0;
+    margin: 10% 0;
     padding: 0;
     column-gap: 5%;
     justify-content: space-between;
     width: 80%;
-  }
-
-  #contact > ul {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 1;
-    margin: 20% 0 0 0;
   }
 
   #about-me > ul > li > ul {
@@ -506,23 +528,22 @@ body {
 
   #contact {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 28% 47%;
     grid-template-rows: auto auto;
-    justify-content: space-between;
-    padding: 10% 0 0 0;
+    justify-content: center;
+    column-gap: 5%;
+    padding-top: 10%;
   }
 
   #contact > header > h2 {
     text-align: left;
     margin: 0;
     color: #262626;
-    padding: 0 5% 0 15%;
   }
 
   #contact-form {
     display: block;
     margin: 0;
-    padding: 0 15% 0 5%;
   }
 
   #contact-form > fieldset {
@@ -533,4 +554,12 @@ body {
   #contact-form > fieldset > * {
     margin: 10px 0 !important;
   }
+
+  #contact > ul {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    margin: 15% 0 0 0;
+  }
+
+  /* stylelint-enable no-descending-specificity */
 }
