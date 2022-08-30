@@ -354,6 +354,9 @@ body {
   padding: 10px;
 }
 
+.label-remove {
+  display: none;
+}
 /* stylelint-enable no-descending-specificity */
 
 @media only screen and (min-width: 768px) {
