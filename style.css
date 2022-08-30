@@ -71,7 +71,7 @@ body {
   text-align: center;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid #802E00;
+  border: 1px solid #802e00;
   transition-property: background;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
@@ -79,12 +79,12 @@ body {
 
 .card-button:hover {
   background: #fff5e1;
-  border: 1px solid #802E00;
-  color: #802E00;
+  border: 1px solid #802e00;
+  color: #802e00;
 }
 
 .card-button:active {
-  background: #802E00;
+  background: #802e00;
   color: #fff;
 }
 
