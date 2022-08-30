@@ -181,9 +181,12 @@
     </header>
     <form id="contact-form" action="https://formspree.io/f/mayknqdr" target="_self" method="post">
       <fieldset>
-          <input type="text" name="full_name" placeholder="Full Name" required maxlength="30" />
-          <input type="email" name="email" placeholder="Email address" required />
-          <textarea maxlength="500" name="message" placeholder="Enter text here" required></textarea>
+          <input id="forminput1" type="text" name="full_name" placeholder="Full Name" required maxlength="30" />
+          <label for="forminput1" class="label-remove">Full Name</label>
+          <input id="forminput2" type="email" name="email" placeholder="Email address" required />
+          <label for="forminput2" class="label-remove">Email Address</label>
+          <textarea id="forminput3" maxlength="500" name="message" placeholder="Enter text here" required></textarea>
+          <label for="forminput3" class="label-remove">Enter Text Here</label>
       </fieldset>
       <button class="card-button" name="button" type="submit">Get in touch</button>
     </form>
