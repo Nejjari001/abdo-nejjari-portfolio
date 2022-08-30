@@ -65,13 +65,13 @@ body {
   display: inline-block;
   color: #fff;
   padding: 14px 8px;
-  background: #ff6b00;
+  background: #802e00;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   text-align: center;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid #ff6b00;
+  border: 1px solid #802e00;
   transition-property: background;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
@@ -79,12 +79,12 @@ body {
 
 .card-button:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
+  border: 1px solid #802e00;
+  color: #802e00;
 }
 
 .card-button:active {
-  background: #e05304;
+  background: #802e00;
   color: #fff;
 }
 
@@ -354,6 +354,9 @@ body {
   padding: 10px;
 }
 
+.label-remove {
+  display: none;
+}
 /* stylelint-enable no-descending-specificity */
 
 @media only screen and (min-width: 768px) {
