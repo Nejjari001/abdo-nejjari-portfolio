@@ -64,14 +64,14 @@ body {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  padding: 14px 8px;
-  background: #ff6b00;
+  padding: 1em .8em;
+  background: #f55800;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   text-align: center;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid #ff6b00;
+  border: 1px solid #f55800;
   transition-property: background;
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
@@ -197,7 +197,7 @@ body {
 }
 
 #last-work > .card-body > a {
-  width: 120px;
+  width: fit-content;
   margin: 5px 0;
 }
 
@@ -260,7 +260,6 @@ body {
 
 #about-me > ul > li > ul {
   margin: 10% 0;
-  padding: 0;
   font-weight: 400;
   font-size: 1.375rem;
 }
@@ -354,6 +353,9 @@ body {
   padding: 10px;
 }
 
+.label-remove {
+  display: none;
+}
 /* stylelint-enable no-descending-specificity */
 
 @media only screen and (min-width: 768px) {
@@ -524,6 +526,7 @@ body {
   #about-me > ul > li > ul {
     flex-direction: column;
     text-align: left;
+    padding-left: 40px;
   }
 
   #contact {
