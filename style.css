@@ -83,12 +83,12 @@ a {
 
 .card-button:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
+  border: 1px solid #802e00;
+  color: #802e00;
 }
 
 .card-button:active {
-  background: #e05304;
+  background: #802e00;
   color: #fff;
 }
 
