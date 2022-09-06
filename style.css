@@ -204,7 +204,6 @@ a {
 }
 
 #last-work > img {
-  max-height: auto;
   max-width: 100%;
 }
 
@@ -493,7 +492,6 @@ a {
   }
 
   #last-work > img {
-    max-height: auto;
     max-width: calc(44% - 10px);
     margin: 0 10px 0 0;
   }
