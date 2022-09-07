@@ -501,10 +501,7 @@ a {
 
   .popup-window > div > ul {
     grid-column: 1 / span 4;
-  }
-
-  .popup-window > div > ul > li {
-    height: fit-content;
+    align-items: flex-start;
   }
 
   .popup-window > div > img {
@@ -529,7 +526,6 @@ a {
 
   .popup-window > div > div > a {
     width: fit-content;
-    height: fit-content;
   }
 
   #toolbar {
