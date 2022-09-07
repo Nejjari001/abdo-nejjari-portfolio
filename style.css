@@ -153,14 +153,14 @@ a {
 
 .popup-window > div > div {
   display: flex;
-  justify-content: space-between;
 }
 
 .popup-window > div > div > a {
-  width: 45%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 0.5rem;
+  margin-right: 10px;
 }
 
 #toolbar {
@@ -482,7 +482,7 @@ a {
     padding: 15px 10px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 15% 35% 35%;
+    grid-template-rows: 10% 17% 60% 13%;
   }
 
   #close-popup {
@@ -496,7 +496,6 @@ a {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     margin: 0;
-    padding: 0;
   }
 
   .popup-window > div > ul {
