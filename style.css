@@ -196,6 +196,9 @@ a {
   padding: 3rem 5%;
 }
 
+/* Disabling Stylelint specificity calculator for triggering false alarms */
+/* stylelint-disable no-descending-specificity */
+
 .mobile-menu > ul > li {
   list-style: none;
   border-bottom: 1px solid #6f6c6b;
@@ -203,6 +206,8 @@ a {
   padding-left: 1rem;
   margin: 1.5rem 0;
 }
+
+/* stylelint-enable no-descending-specificity */
 
 .mobile-menu > ul > li > a {
   color: #fff5e1;
