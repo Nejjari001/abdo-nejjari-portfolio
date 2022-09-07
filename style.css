@@ -83,12 +83,12 @@ a {
 
 .card-button:hover {
   background: #fff5e1;
-  border: 1px solid #802e00;
-  color: #802e00;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .card-button:active {
-  background: #802e00;
+  background: #e05304;
   color: #fff;
 }
 
@@ -97,6 +97,70 @@ a {
   color: #5b5957;
   border: none;
   cursor: none;
+}
+
+.popup-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #2c2c2ca8;
+  backdrop-filter: blur(9px);
+}
+
+.popup-window > div {
+  margin: 15px 5%;
+  background: #fff;
+  padding: 10px 3%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#close-popup {
+  float: right;
+  margin-top: 30px;
+}
+
+.popup-window > div > h2 {
+  color: #172b4d;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+.popup-window > div > ul > li {
+  border: 1px solid #979493;
+  color: #3c3a39;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-window > div > img {
+  width: 100%;
+  height: 250px;
+  margin-top: 25px;
+}
+
+.popup-window > div > p {
+  color: #344563;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.popup-window > div > div {
+  display: flex;
+}
+
+.popup-window > div > div > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  margin-right: 10px;
 }
 
 #toolbar {
@@ -132,6 +196,9 @@ a {
   padding: 3rem 5%;
 }
 
+/* Disabling Stylelint specificity calculator for triggering false alarms */
+/* stylelint-disable no-descending-specificity */
+
 .mobile-menu > ul > li {
   list-style: none;
   border-bottom: 1px solid #6f6c6b;
@@ -139,6 +206,8 @@ a {
   padding-left: 1rem;
   margin: 1.5rem 0;
 }
+
+/* stylelint-enable no-descending-specificity */
 
 .mobile-menu > ul > li > a {
   color: #fff5e1;
@@ -183,6 +252,7 @@ a {
   grid-template-columns: 90%;
   justify-content: center;
   padding: 24% 0;
+  gap: 10px;
 }
 
 #works-heading {
@@ -235,8 +305,7 @@ a {
 #works > .work {
   display: flex;
   flex-direction: column;
-  background: url('./img/Img-placeholder2.jpg') no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100% !important;
 }
 
 #works > .work > div {
@@ -408,6 +477,56 @@ a {
     background-size: 100% 100% !important;
   }
 
+  .popup-window > div {
+    margin: 75px 10%;
+    padding: 15px 10px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 40px 90px 60% 13%;
+  }
+
+  #close-popup {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    margin: 0;
+    justify-self: right;
+  }
+
+  .popup-window > div > h2 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    margin: 0;
+  }
+
+  .popup-window > div > ul {
+    grid-column: 1 / span 4;
+    align-items: flex-start;
+  }
+
+  .popup-window > div > img {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+    width: 95%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .popup-window > div > p {
+    margin-top: 15px;
+    grid-column: 3 / span 2;
+  }
+
+  .popup-window > div > div {
+    grid-column: 3 / span 2;
+    justify-content: flex-start;
+    gap: 10px;
+    align-self: flex-end;
+  }
+
+  .popup-window > div > div > a {
+    width: fit-content;
+  }
+
   #toolbar {
     padding: 20px 10%;
   }
@@ -469,7 +588,7 @@ a {
 
   #works {
     padding: 8% 10%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     gap: 10px;
   }
 
