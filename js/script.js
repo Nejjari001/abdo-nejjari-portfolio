@@ -99,7 +99,7 @@ const project3 = {
 };
 
 const project4 = {
-  name: 'Website Protfolio',
+  name: 'Website Portfolio',
   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
   imgSrc: './img/card-background1.jpg',
   techs: ['Html', 'Bootstrap', 'Ruby'],
@@ -126,7 +126,7 @@ const project6 = {
 };
 
 const project7 = {
-  name: 'Website Protfolio',
+  name: 'Website Portfolio',
   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
   imgSrc: './img/card-background1.jpg',
   techs: ['Html', 'Bootstrap', 'Ruby'],
