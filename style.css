@@ -14,7 +14,7 @@ a {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .margin-reset {
