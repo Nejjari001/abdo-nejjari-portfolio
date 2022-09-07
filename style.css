@@ -482,7 +482,7 @@ a {
     padding: 15px 10px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 10% 17% 60% 13%;
+    grid-template-rows: 40px 90px 60% 13%;
   }
 
   #close-popup {
