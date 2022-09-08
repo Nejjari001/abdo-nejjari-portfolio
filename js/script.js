@@ -160,3 +160,4 @@ form.addEventListener('submit', (event) => {
   } else {
     form.submit();
   }
+});
