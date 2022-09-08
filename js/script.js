@@ -29,11 +29,13 @@ function createPopupWindow(project) {
   popupWindow.querySelector('div').innerHTML += `<img src="${project.imgSrc}" alt="The project preview">
     <p class='card-desc'>${project.desc}</p>
     <div><a class="card-button" href="${project.liveUrl}">See Live <img src="./img/icon-export.png"></a>
-    <a class="card-button" href="${project.srcUrl}">See Source <img src="./img/Icon-Github.png"></a></div>`;
+    <a class="card-button" href="${project.srcUrl}">See Source <img src="./img/Icon-GitHub.png"></a></div>`;
   document.body.appendChild(popupWindow);
+  document.querySelector('html').style.overflow = 'hidden';
   const closePopup = document.querySelector('#close-popup');
   closePopup.addEventListener('click', () => {
     popupWindow.remove();
+    document.querySelector('html').style.overflow = 'auto';
   });
 }
 
@@ -73,7 +75,7 @@ function createProjectCard(project, isItLast) {
 
 const project1 = {
   name: 'Multi-Post Stories',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   imgSrc: './img/Img-placeholder.jpg',
   techs: ['Css', 'Html', 'Bootstrap', 'Ruby'],
   liveUrl: '#',
@@ -140,4 +142,22 @@ const projects = [project2, project3, project4, project5, project6, project7];
 
 projects.forEach((project) => {
   createProjectCard(project);
+});
+const form = document.querySelector('#contact-form');
+const { email } = form.elements;
+const msgContainer = document.querySelector('.msg-container');
+const pattern = /[A-Z]/;
+const invalidEmail = 'Please make sure that all characters in your email are lowercase!';
+
+function showMsg(msg, container) {
+  container.innerHTML = msg;
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (pattern.test(email.value) === true) {
+    showMsg(invalidEmail, msgContainer);
+  } else {
+    form.submit();
+  }
 });
