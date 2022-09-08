@@ -29,11 +29,13 @@ function createPopupWindow(project) {
   popupWindow.querySelector('div').innerHTML += `<img src="${project.imgSrc}" alt="The project preview">
     <p class='card-desc'>${project.desc}</p>
     <div><a class="card-button" href="${project.liveUrl}">See Live <img src="./img/icon-export.png"></a>
-    <a class="card-button" href="${project.srcUrl}">See Source <img src="./img/Icon-Github.png"></a></div>`;
+    <a class="card-button" href="${project.srcUrl}">See Source <img src="./img/Icon-GitHub.png"></a></div>`;
   document.body.appendChild(popupWindow);
+  document.querySelector('html').style.overflow = 'hidden';
   const closePopup = document.querySelector('#close-popup');
   closePopup.addEventListener('click', () => {
     popupWindow.remove();
+    document.querySelector('html').style.overflow = 'auto';
   });
 }
 
@@ -73,7 +75,7 @@ function createProjectCard(project, isItLast) {
 
 const project1 = {
   name: 'Multi-Post Stories',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
   imgSrc: './img/Img-placeholder.jpg',
   techs: ['Css', 'Html', 'Bootstrap', 'Ruby'],
   liveUrl: '#',
