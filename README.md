@@ -2,7 +2,7 @@
 
 # PortFolio
 
-> This is my personal PortFolio 😃.
+> This is my personal PortFolio 😃
 
 
 ## Built With
