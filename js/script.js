@@ -144,7 +144,9 @@ projects.forEach((project) => {
   createProjectCard(project);
 });
 const form = document.querySelector('#contact-form');
-const email = form.elements['email'];
+const { email } = form.elements;
+const fullName = form.elements.full_name;
+const msg = form.elements.message;
 const msgContainer = document.querySelector('.msg-container');
 const pattern = /[A-Z]/;
 const invalidEmail = 'Please make sure that all characters in your email are lowercase!';
@@ -161,3 +163,26 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const Data = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const storedData = window.localStorage.getItem('Data');
+const parsedData = JSON.parse(storedData);
+
+form.addEventListener('change', () => {
+  Data.email = email.value;
+  Data.name = fullName.value;
+  Data.message = msg.value;
+  const strngData = JSON.stringify(Data);
+  window.localStorage.setItem('Data', strngData);
+});
+
+if (storedData !== null) {
+  email.value = parsedData.email;
+  fullName.value = parsedData.name;
+  msg.value = parsedData.message;
+}
