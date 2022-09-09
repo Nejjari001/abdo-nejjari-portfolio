@@ -2,12 +2,13 @@
 
 # PortFolio
 
-> My PortFolio project.
+> This is my personal PortFolio 😃.
 
 
 ## Built With
 
 - HTML/CSS
+- Javascript
 
 ## Live Demo
 
