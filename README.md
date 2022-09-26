@@ -2,7 +2,7 @@
 
 # PortFolio
 
-> This is my personal PortFolio 😃
+> This is my personal PortFolio where I present all my works and projects.
 
 
 ## Built With
