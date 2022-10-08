@@ -196,7 +196,6 @@ a {
   padding: 3rem 5%;
 }
 
-/* Disabling Stylelint specificity calculator for triggering false alarms */
 /* stylelint-disable no-descending-specificity */
 
 .mobile-menu > ul > li {
@@ -332,7 +331,6 @@ a {
   background: url('./img/frame.png') no-repeat right bottom;
 }
 
-/* Disabling Stylelint specificity calculator for triggering false alarms */
 /* stylelint-disable no-descending-specificity */
 
 #about-me > header > h2 {
@@ -470,7 +468,6 @@ a {
 .label-remove {
   display: none;
 }
-/* stylelint-enable no-descending-specificity */
 
 @media only screen and (min-width: 768px) {
   .hide-desk {
@@ -492,7 +489,9 @@ a {
   }
 
   .popup-window > div {
-    margin: 75px 10%;
+    box-sizing: border-box;
+    min-height: 82%;
+    margin: 4% 10%;
     padding: 25px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;

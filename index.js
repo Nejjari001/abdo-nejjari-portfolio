@@ -20,7 +20,8 @@ navListItems.forEach((item) => item.addEventListener('click', () => {
 function createPopupWindow(project) {
   const popupWindow = document.createElement('div');
   popupWindow.classList.add('popup-window');
-  popupWindow.innerHTML = `<div><a id="close-popup"><img src="./img/close-navlist.png" alt="Close Button"></a>
+  popupWindow.innerHTML = `<div>
+    <a id="close-popup"><img src="./img/close-navlist.png" alt="Close Button"></a>
     <h2 class="card-header">${project.name}</h2>
     <ul class="card-badges padding-reset margin-reset"></ul>`;
   project.techs.forEach((item) => {
@@ -28,8 +29,8 @@ function createPopupWindow(project) {
   });
   popupWindow.querySelector('div').innerHTML += `<img src="${project.imgSrc}" alt="The project preview">
     <p class='card-desc'>${project.desc}</p>
-    <div><a class="card-button" href="${project.liveUrl}">See Live <img src="./img/icon-export.png"></a>
-    <a class="card-button" href="${project.srcUrl}">See Source <img src="./img/Icon-GitHub.png"></a></div>`;
+    <div><a class="card-button" href="${project.liveUrl}" target="_blank">See Live <img src="./img/icon-export.png"></a>
+    <a class="card-button" href="${project.srcUrl}" target="_blank">See Source <img src="./img/Icon-GitHub.png"></a></div>`;
   document.body.appendChild(popupWindow);
   document.querySelector('html').style.overflow = 'hidden';
   const closePopup = document.querySelector('#close-popup');
@@ -73,72 +74,67 @@ function createProjectCard(project, isItLast) {
   });
 }
 
-const project1 = {
-  name: 'Multi-Post Stories',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  imgSrc: './img/Img-placeholder.jpg',
-  techs: ['Css', 'Html', 'Bootstrap', 'Ruby'],
-  liveUrl: '#',
-  srcUrl: '#',
+const firstProject = {
+  name: 'To Do List',
+  desc: 'Cloned version of the minimalist website which is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+  imgSrc: './img/to-do-list.png',
+  techs: ['CSS', 'HTML', 'JavaScript'],
+  liveUrl: 'https://ouasamine.github.io/to-do-list/',
+  srcUrl: 'https://github.com/ouasamine/to-do-list',
 };
 
-const project2 = {
-  name: 'Profesional Art Printing Data',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background1.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
+const projects = [
+  {
+    name: 'Profesional Art Printing Data',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background1.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background2.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+  {
+    name: 'Website Portfolio',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background1.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+  {
+    name: 'Profesional Art Printing Data',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background1.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+  {
+    name: 'Data Dashboard Healthcare',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background2.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+  {
+    name: 'Website Portfolio',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    imgSrc: './img/card-background1.jpg',
+    techs: ['Html', 'Bootstrap', 'Ruby'],
+    liveVerLink: '#',
+    srcLink: '#',
+  },
+];
 
-const project3 = {
-  name: 'Data Dashboard Healthcare',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background2.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
-
-const project4 = {
-  name: 'Website Portfolio',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background1.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
-
-const project5 = {
-  name: 'Profesional Art Printing Data',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background1.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
-
-const project6 = {
-  name: 'Data Dashboard Healthcare',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background2.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
-
-const project7 = {
-  name: 'Website Portfolio',
-  desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-  imgSrc: './img/card-background1.jpg',
-  techs: ['Html', 'Bootstrap', 'Ruby'],
-  liveVerLink: '#',
-  srcLink: '#',
-};
-
-createProjectCard(project1, 1);
-
-const projects = [project2, project3, project4, project5, project6, project7];
+createProjectCard(firstProject, 1);
 
 projects.forEach((project) => {
   createProjectCard(project);
