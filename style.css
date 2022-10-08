@@ -206,8 +206,6 @@ a {
   margin: 1.5rem 0;
 }
 
-/* stylelint-enable no-descending-specificity */
-
 .mobile-menu > ul > li > a {
   color: #fff5e1;
   text-decoration: none;
@@ -330,8 +328,6 @@ a {
   border-bottom: 1px solid #fff;
   background: url('./img/frame.png') no-repeat right bottom;
 }
-
-/* stylelint-disable no-descending-specificity */
 
 #about-me > header > h2 {
   color: #ff6b00;
@@ -489,7 +485,6 @@ a {
   }
 
   .popup-window > div {
-    box-sizing: border-box;
     min-height: 82%;
     margin: 4% 10%;
     padding: 25px;
@@ -669,9 +664,6 @@ a {
     flex-direction: column;
   }
 
-  /* Disabling Stylelint specificity calculator for triggering false alarms */
-  /* stylelint-disable no-descending-specificity */
-
   #about-me > header > p,
   #about-me > header > h2 {
     width: 44%;
@@ -735,5 +727,4 @@ a {
     margin: 20px 0;
   }
 
-  /* stylelint-enable no-descending-specificity */
 }
