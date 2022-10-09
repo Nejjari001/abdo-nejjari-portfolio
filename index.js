@@ -60,14 +60,15 @@ function createProjectCard(project, isItLast) {
     document.querySelector('#works').appendChild(newCard);
   } else {
     newCard.classList.add('work');
-    newCard.innerHTML += `<div>
-      <h2 class='card-header'>${project.name}</h2>
-      <p class='card-desc'>${project.desc}</p>
-      <ul class='card-badges'>`;
+    newCard.innerHTML += `
+      <div>
+        <h2 class='card-header'>${project.name}</h2>
+        <p class='card-desc'>${project.desc}</p>
+        <ul class='card-badges'>`;
     project.techs.forEach((item) => {
       newCard.querySelector('ul').innerHTML += `<li>${item}</li>`;
     });
-    newCard.innerHTML += '<a class=\'card-button\'>See Project</a></div>';
+    newCard.innerHTML += '<a class="card-button">See Project</a></div>';
     newCard.style.background = `url('${project.imgSrc}') no-repeat`;
     document.querySelector('#works').appendChild(newCard);
   }
@@ -79,7 +80,7 @@ function createProjectCard(project, isItLast) {
 
 const firstProject = {
   name: 'To Do List',
-  desc: 'Cloned version of the minimalist website which is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+  desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
   imgSrc: './img/to-do-list.png',
   techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
   liveUrl: 'https://ouasamine.github.io/to-do-list/',
@@ -89,51 +90,51 @@ const firstProject = {
 const projects = [
   {
     name: 'COP22 Marrakech 2016 summit',
-    desc: 'A Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016.',
+    desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
     imgSrc: './img/cop22.png',
     techs: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://ouasamine.github.io/cop22-conference/',
     srcUrl: 'https://github.com/ouasamine/cop22-conference',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background2.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    name: 'To Do List',
+    desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
+    imgSrc: './img/to-do-list.png',
+    techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
+    liveUrl: 'https://ouasamine.github.io/to-do-list/',
+    srcUrl: 'https://github.com/ouasamine/to-do-list',
   },
   {
-    name: 'Website Portfolio',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background1.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    name: 'COP22 Marrakech 2016 summit',
+    desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
+    imgSrc: './img/cop22.png',
+    techs: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://ouasamine.github.io/cop22-conference/',
+    srcUrl: 'https://github.com/ouasamine/cop22-conference',
   },
   {
-    name: 'Profesional Art Printing Data',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background1.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    name: 'To Do List',
+    desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
+    imgSrc: './img/to-do-list.png',
+    techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
+    liveUrl: 'https://ouasamine.github.io/to-do-list/',
+    srcUrl: 'https://github.com/ouasamine/to-do-list',
   },
   {
-    name: 'Data Dashboard Healthcare',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background2.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    name: 'COP22 Marrakech 2016 summit',
+    desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
+    imgSrc: './img/cop22.png',
+    techs: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://ouasamine.github.io/cop22-conference/',
+    srcUrl: 'https://github.com/ouasamine/cop22-conference',
   },
   {
-    name: 'Website Portfolio',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background1.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    name: 'To Do List',
+    desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
+    imgSrc: './img/to-do-list.png',
+    techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
+    liveUrl: 'https://ouasamine.github.io/to-do-list/',
+    srcUrl: 'https://github.com/ouasamine/to-do-list',
   },
 ];
 

@@ -312,6 +312,7 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px 15px 10px 15px;
+  background: linear-gradient(to top, #0a0a0ae6, #2c2c2c0f);
 }
 
 #about-me {
@@ -484,7 +485,6 @@ a {
   }
 
   .popup-window > div {
-    max-height: 500px;
     max-width: 900px;
     margin: 4% 10%;
     padding: 25px;
@@ -645,6 +645,10 @@ a {
 
   #works > .work:hover {
     cursor: pointer;
+  }
+
+  #works > .work:hover > div {
+    background: none;
   }
 
   #works > .work:hover > div > h2,
