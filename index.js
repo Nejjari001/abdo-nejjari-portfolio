@@ -27,10 +27,13 @@ function createPopupWindow(project) {
   project.techs.forEach((item) => {
     popupWindow.querySelector('ul').innerHTML += `<li>${item}</li>`;
   });
-  popupWindow.querySelector('div').innerHTML += `<img src="${project.imgSrc}" alt="The project preview">
+  popupWindow.querySelector('div').innerHTML += `
+    <div class="img-placeholder"><img src="${project.imgSrc}" alt="The project preview"></div>
     <p class='card-desc'>${project.desc}</p>
-    <div><a class="card-button" href="${project.liveUrl}" target="_blank">See Live <img src="./img/icon-export.png"></a>
-    <a class="card-button" href="${project.srcUrl}" target="_blank">See Source <img src="./img/Icon-GitHub.png"></a></div>`;
+    <div class="btns-container">
+      <a class="card-button" href="${project.liveUrl}" target="_blank">See Live <img src="./img/icon-export.png"></a>
+      <a class="card-button" href="${project.srcUrl}" target="_blank">See Source <img src="./img/Icon-GitHub.png"></a>
+    </div>`;
   document.body.appendChild(popupWindow);
   document.querySelector('html').style.overflow = 'hidden';
   const closePopup = document.querySelector('#close-popup');
@@ -78,7 +81,7 @@ const firstProject = {
   name: 'To Do List',
   desc: 'Cloned version of the minimalist website which is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
   imgSrc: './img/to-do-list.png',
-  techs: ['CSS', 'HTML', 'JavaScript'],
+  techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
   liveUrl: 'https://ouasamine.github.io/to-do-list/',
   srcUrl: 'https://github.com/ouasamine/to-do-list',
 };
@@ -86,11 +89,11 @@ const firstProject = {
 const projects = [
   {
     name: 'Profesional Art Printing Data',
-    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    imgSrc: './img/card-background1.jpg',
-    techs: ['Html', 'Bootstrap', 'Ruby'],
-    liveVerLink: '#',
-    srcLink: '#',
+    desc: 'A Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016.',
+    imgSrc: './img/cop22.png',
+    techs: ['HTML', 'CSS', 'JavaScript'],
+    liveVerLink: 'https://ouasamine.github.io/cop22-conference/',
+    srcLink: 'https://github.com/ouasamine/cop22-conference',
   },
   {
     name: 'Data Dashboard Healthcare',

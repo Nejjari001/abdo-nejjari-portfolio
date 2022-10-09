@@ -106,6 +106,9 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #2c2c2ca8;
   backdrop-filter: blur(9px);
   overflow-y: auto;
@@ -115,10 +118,6 @@ a {
   margin: 15px 5%;
   background: #fff;
   padding: 10px 3%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 #close-popup {
@@ -141,7 +140,7 @@ a {
 
 .popup-window > div > img {
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   margin-top: 25px;
 }
 
@@ -485,47 +484,52 @@ a {
   }
 
   .popup-window > div {
-    min-height: 82%;
+    max-height: 500px;
+    max-width: 900px;
     margin: 4% 10%;
     padding: 25px;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 40px 90px calc(60% - 40px) calc(40% - 90px);
+    grid-template-columns: 60% 40%;
+    position: relative;
+    column-gap: 15px;
+    row-gap: 8px;
   }
 
   #close-popup {
-    grid-column: 4 / span 1;
-    grid-row: 1 / span 1;
+    position: absolute;
+    top: 15px;
+    right: 15px;
     margin: 0;
-    justify-self: right;
   }
 
   .popup-window > div > h2 {
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
     margin: 0;
   }
 
   .popup-window > div > ul {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 2;
     align-items: flex-start;
+    margin-bottom: 25px;
   }
 
-  .popup-window > div > img {
-    grid-column: 1 / span 2;
+  .popup-window .img-placeholder {
+    grid-column: 1 / span 1;
     grid-row: 3 / span 2;
-    width: 95%;
-    height: 300px;
     margin: 0;
+  }
+
+  .popup-window .img-placeholder img {
+    width: 100%;
   }
 
   .popup-window > div > p {
     margin: 0;
-    grid-column: 3 / span 2;
+    grid-column: 2 / span 1;
   }
 
-  .popup-window > div > div {
-    grid-column: 3 / span 2;
+  .popup-window .btns-container {
+    grid-column: 2 / span 1;
     justify-content: flex-start;
     gap: 10px;
     align-self: flex-end;
