@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -16,14 +18,6 @@ a {
 
 .hide {
   display: none;
-}
-
-.margin-reset {
-  margin: 0;
-}
-
-.padding-reset {
-  padding: 0;
 }
 
 .social-media {
@@ -115,7 +109,7 @@ a {
 }
 
 .popup-window > div {
-  margin: 15px 5%;
+  margin: 60px 5%;
   background: #fff;
   padding: 10px 3%;
 }
@@ -138,28 +132,34 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
-.popup-window > div > img {
+.popup-window .img-placeholder {
   width: 100%;
-  /* height: 250px; */
   margin-top: 25px;
+}
+
+.popup-window .img-placeholder img {
+  width: 100%;
 }
 
 .popup-window > div > p {
   color: #344563;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
+  margin-top: 25px;
 }
 
-.popup-window > div > div {
+.popup-window .btns-container {
   display: flex;
+  margin: 25px 0;
 }
 
-.popup-window > div > div > a {
+.popup-window .btns-container a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
   margin-right: 10px;
+  gap: 10px;
 }
 
 #toolbar {
@@ -530,13 +530,12 @@ a {
 
   .popup-window .btns-container {
     grid-column: 2 / span 1;
-    justify-content: flex-start;
-    gap: 10px;
     align-self: flex-end;
+    margin: 0;
   }
 
-  .popup-window > div > div > a {
-    width: fit-content;
+  .popup-window .btns-container a {
+    gap: 5px;
   }
 
   #toolbar {

@@ -23,7 +23,7 @@ function createPopupWindow(project) {
   popupWindow.innerHTML = `<div>
     <a id="close-popup"><img src="./img/close-navlist.png" alt="Close Button"></a>
     <h2 class="card-header">${project.name}</h2>
-    <ul class="card-badges padding-reset margin-reset"></ul>`;
+    <ul class="card-badges"></ul>`;
   project.techs.forEach((item) => {
     popupWindow.querySelector('ul').innerHTML += `<li>${item}</li>`;
   });
@@ -31,8 +31,8 @@ function createPopupWindow(project) {
     <div class="img-placeholder"><img src="${project.imgSrc}" alt="The project preview"></div>
     <p class='card-desc'>${project.desc}</p>
     <div class="btns-container">
-      <a class="card-button" href="${project.liveUrl}" target="_blank">See Live <img src="./img/icon-export.png"></a>
-      <a class="card-button" href="${project.srcUrl}" target="_blank">See Source <img src="./img/Icon-GitHub.png"></a>
+      <a class="card-button" href="${project.liveUrl}" target="_blank">See Live <i class="material-symbols-outlined">arrow_outward</i></a>
+      <a class="card-button" href="${project.srcUrl}" target="_blank">See Source <i class="devicon-github-original"></i></a>
     </div>`;
   document.body.appendChild(popupWindow);
   document.querySelector('html').style.overflow = 'hidden';
@@ -52,7 +52,7 @@ function createProjectCard(project, isItLast) {
     newCard.innerHTML += `<div class="card-body">
       <h2 class='card-header'>${project.name}</h2>
       <p class='card-desc'>${project.desc}</p>
-      <ul class='card-badges padding-reset margin-reset'>`;
+      <ul class='card-badges'>`;
     project.techs.forEach((item) => {
       newCard.querySelector('ul').innerHTML += `<li>${item}</li>`;
     });
@@ -63,7 +63,7 @@ function createProjectCard(project, isItLast) {
     newCard.innerHTML += `<div>
       <h2 class='card-header'>${project.name}</h2>
       <p class='card-desc'>${project.desc}</p>
-      <ul class='card-badges padding-reset margin-reset'>`;
+      <ul class='card-badges'>`;
     project.techs.forEach((item) => {
       newCard.querySelector('ul').innerHTML += `<li>${item}</li>`;
     });
@@ -88,12 +88,12 @@ const firstProject = {
 
 const projects = [
   {
-    name: 'Profesional Art Printing Data',
+    name: 'COP22 Marrakech 2016 summit',
     desc: 'A Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016.',
     imgSrc: './img/cop22.png',
     techs: ['HTML', 'CSS', 'JavaScript'],
-    liveVerLink: 'https://ouasamine.github.io/cop22-conference/',
-    srcLink: 'https://github.com/ouasamine/cop22-conference',
+    liveUrl: 'https://ouasamine.github.io/cop22-conference/',
+    srcUrl: 'https://github.com/ouasamine/cop22-conference',
   },
   {
     name: 'Data Dashboard Healthcare',
