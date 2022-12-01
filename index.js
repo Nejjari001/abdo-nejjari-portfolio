@@ -117,6 +117,15 @@ const projects = [
     srcUrl: 'https://github.com/ouasamine/tvmaze',
   },
   {
+    name: 'Leaderboard',
+    briefDesc: 'An app to store and manage scores of different users using an external API.',
+    desc: 'Leaderboard is an app that shows the scores of different players, the scores and players infos are fetched from an external API, the user can add his name and score as well which will be sent and stored in the external API. The project was built using JavaScript and bundeled with webpack.',
+    imgSrc: './img/leaderboard.png',
+    techs: ['JavaScript', 'Webpack'],
+    liveUrl: 'https://ouasamine.github.io/leaderboard/',
+    srcUrl: 'https://github.com/ouasamine/leaderboard',
+  },
+  {
     name: 'To Do List',
     briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
     desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
