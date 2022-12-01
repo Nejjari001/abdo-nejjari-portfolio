@@ -90,13 +90,22 @@ const firstProject = {
 
 const projects = [
   {
-    name: 'Air Quality Index',
-    briefDesc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities.',
-    desc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities. The app uses an external API to fetch data and is built with React.JS, Redux.JS and JavaScript.',
-    imgSrc: './img/air-quality.png',
+    name: 'BookStore',
+    briefDesc: 'An online books store where you can add your preffered books.',
+    desc: 'Bookstore is books list page using an external API to store your preferred books with the ability to remove and add new books, the project is built with React.JS & Redux.JS.',
+    imgSrc: './img/bookstore.png',
     techs: ['React.JS','Redux.JS','JavaScript'],
-    liveUrl: 'https://ouasamine.github.io/air-quality',
-    srcUrl: 'https://github.com/ouasamine/air-quality',
+    liveUrl: 'https://bookstore-b254.netlify.app/',
+    srcUrl: 'https://github.com/ouasamine/bookstore',
+  },
+  {
+    name: 'Math Magicians',
+    briefDesc: 'A single page app with 3 pages including a simple calculator.',
+    desc: 'A single page app with 3 pages (Home, Calculator, Quotes). the app is built with Vanilla JavaScript and React.',
+    imgSrc: './img/math-magicians.png',
+    techs: ['React.JS','JavaScript'],
+    liveUrl: 'https://ouasamine.github.io/math-magicians/',
+    srcUrl: 'https://github.com/ouasamine/math-magicians',
   },
   {
     name: 'TVmaze',
@@ -106,15 +115,6 @@ const projects = [
     techs: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     liveUrl: 'https://ouasamine.github.io/tvmaze/',
     srcUrl: 'https://github.com/ouasamine/tvmaze',
-  },
-  {
-    name: 'COP22 Marrakech 2016 summit',
-    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
-    desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
-    imgSrc: './img/cop22.png',
-    techs: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://ouasamine.github.io/cop22-conference/',
-    srcUrl: 'https://github.com/ouasamine/cop22-conference',
   },
   {
     name: 'To Do List',
@@ -127,7 +127,7 @@ const projects = [
   },
   {
     name: 'COP22 Marrakech 2016 summit',
-    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
+    briefDesc: '2 Pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016.',
     desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
     imgSrc: './img/cop22.png',
     techs: ['HTML', 'CSS', 'JavaScript'],

@@ -468,6 +468,41 @@ a {
   display: none;
 }
 
+@media only screen and (min-width: 500px) {
+  #works {
+    padding: 8% 5%;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+  }
+
+  #works > header {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #works > header > .h-line {
+    margin: 0;
+  }
+
+  #last-work {
+    grid-column: 1 / span 2;
+    margin-bottom: 15px;
+  }
+
+  #works > .work {
+    position: relative;
+    min-height: 350px;
+  }
+
+  #works > .work > div {
+    height: 100%;
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
   .hide-desk {
     display: none;
@@ -475,16 +510,6 @@ a {
 
   .show-desk {
     display: block;
-  }
-
-  .background1 {
-    background: url('./img/card-background1.jpg') no-repeat !important;
-    background-size: 100% 100% !important;
-  }
-
-  .background2 {
-    background: url('./img/card-background2.jpg') no-repeat !important;
-    background-size: 100% 100% !important;
   }
 
   .popup-window > div {
@@ -632,10 +657,11 @@ a {
 
   #works > .work {
     position: relative;
+    min-height: 350px;
   }
 
   #works > .work > div {
-    padding: 50% 15px 20px 15px;
+    /* padding: ; */
     height: 100%;
   }
 
