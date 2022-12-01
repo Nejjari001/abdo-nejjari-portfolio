@@ -304,6 +304,7 @@ a {
 
 #works > .work {
   max-width: 350px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-size: 100% !important;
