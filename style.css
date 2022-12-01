@@ -43,6 +43,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  margin: 10px 0;
 }
 
 .card-badges {
@@ -304,7 +305,9 @@ a {
 #works > .work {
   display: flex;
   flex-direction: column;
-  background-size: 100% 100% !important;
+  background-size: 100% !important;
+  background-position: center !important;
+  background-color: #c2c2c2 !important;
 }
 
 #works > .work > div {

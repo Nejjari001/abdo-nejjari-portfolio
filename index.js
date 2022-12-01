@@ -63,7 +63,7 @@ function createProjectCard(project, isItLast) {
     newCard.innerHTML += `
       <div>
         <h2 class='card-header'>${project.name}</h2>
-        <p class='card-desc'>${project.desc}</p>
+        <p class='card-desc'>${project.briefDesc}</p>
         <ul class='card-badges'>`;
     project.techs.forEach((item) => {
       newCard.querySelector('ul').innerHTML += `<li>${item}</li>`;
@@ -79,17 +79,37 @@ function createProjectCard(project, isItLast) {
 }
 
 const firstProject = {
-  name: 'To Do List',
-  desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
-  imgSrc: './img/to-do-list.png',
-  techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
-  liveUrl: 'https://ouasamine.github.io/to-do-list/',
-  srcUrl: 'https://github.com/ouasamine/to-do-list',
+  name: 'Air Quality Index',
+  briefDesc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities.',
+  desc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities. The app uses an external API to fetch data and is built with React.JS, Redux.JS and JavaScript.',
+  imgSrc: './img/air-quality.png',
+  techs: ['React.JS','Redux.JS','JavaScript'],
+  liveUrl: 'https://ouasamine.github.io/air-quality',
+  srcUrl: 'https://github.com/ouasamine/air-quality',
 };
 
 const projects = [
   {
+    name: 'Air Quality Index',
+    briefDesc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities.',
+    desc: 'Air Quality Index is a single page app that provide live data about the air quality in different cities. The app uses an external API to fetch data and is built with React.JS, Redux.JS and JavaScript.',
+    imgSrc: './img/air-quality.png',
+    techs: ['React.JS','Redux.JS','JavaScript'],
+    liveUrl: 'https://ouasamine.github.io/air-quality',
+    srcUrl: 'https://github.com/ouasamine/air-quality',
+  },
+  {
+    name: 'TVmaze',
+    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
+    desc: 'A multi pages web app about famous shows, it presents details about different shows and gives the user the ability to like or comment on their preferred show. The project was built with JavaScript ES6 and bundeled with Webpack.',
+    imgSrc: './img/tvmaze.png',
+    techs: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
+    liveUrl: 'https://ouasamine.github.io/tvmaze/',
+    srcUrl: 'https://github.com/ouasamine/tvmaze',
+  },
+  {
     name: 'COP22 Marrakech 2016 summit',
+    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
     desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
     imgSrc: './img/cop22.png',
     techs: ['HTML', 'CSS', 'JavaScript'],
@@ -98,6 +118,7 @@ const projects = [
   },
   {
     name: 'To Do List',
+    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
     desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
     imgSrc: './img/to-do-list.png',
     techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
@@ -106,35 +127,12 @@ const projects = [
   },
   {
     name: 'COP22 Marrakech 2016 summit',
+    briefDesc: 'Simple tool to help organize your day. It simply lists the things that you need to do in the day.',
     desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
     imgSrc: './img/cop22.png',
     techs: ['HTML', 'CSS', 'JavaScript'],
     liveUrl: 'https://ouasamine.github.io/cop22-conference/',
     srcUrl: 'https://github.com/ouasamine/cop22-conference',
-  },
-  {
-    name: 'To Do List',
-    desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
-    imgSrc: './img/to-do-list.png',
-    techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
-    liveUrl: 'https://ouasamine.github.io/to-do-list/',
-    srcUrl: 'https://github.com/ouasamine/to-do-list',
-  },
-  {
-    name: 'COP22 Marrakech 2016 summit',
-    desc: 'A 2 pages Website Containing Some Informations About The Global Climate Conference COP22 Held in Marrakech 2016. The website was built using plain HTML 5, CSS 3 and JavaScript.',
-    imgSrc: './img/cop22.png',
-    techs: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://ouasamine.github.io/cop22-conference/',
-    srcUrl: 'https://github.com/ouasamine/cop22-conference',
-  },
-  {
-    name: 'To Do List',
-    desc: 'Simple Tool built with JavaScript and bundled with Webpack, that helps organize your day. It simply lists the things that you need to do and allows you to mark them as complete and also remove or add new tasks to the list.',
-    imgSrc: './img/to-do-list.png',
-    techs: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
-    liveUrl: 'https://ouasamine.github.io/to-do-list/',
-    srcUrl: 'https://github.com/ouasamine/to-do-list',
   },
 ];
 
