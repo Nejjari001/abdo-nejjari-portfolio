@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 `git clone https://github.com/Nejjari001/abdo-nejjari-portfolio.git`
 
 2. Browse to the project directory \
-`cd portfolio/`
+`cd abdo-nejjari-portfolio/`
 
 3. Launch the project \
 `./index.html`
@@ -39,8 +39,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Abdo**
 
-- GitHub: [@ouasamine](https://github.com/nejjari001)
-- Twitter: [@ouass_amine](https://twitter.com/@AbdoNJ19)
+- GitHub: [@nejjari001](https://github.com/nejjari001)
+- Twitter: [@nejjari_abdelhafid](https://twitter.com/@AbdoNJ19)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdelhafid-nejjari)
 
 ## 🤝 Contributing
