@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-Check [the live version](https://ouasamine.github.io/portfolio/) of this project.
+Check [the live version](http://wallpapers-nj.me/abdo-nejjari-portfolio/) of this project.
 
 ## Getting Started
 
