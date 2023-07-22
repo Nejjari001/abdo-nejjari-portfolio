@@ -2,6 +2,25 @@ const navBtn = document.querySelector('#nav-button');
 const closeNav = document.querySelector('#close-navlist');
 const navList = document.querySelector('#nav-list');
 const navListItems = document.querySelectorAll('#nav-list > ul > li');
+
+// Get the navigation bar element
+const navbar = document.getElementById("toolbar");
+
+// Get the offset position of the navbar
+const sticky = navbar.offsetTop;
+
+// Function to check whether the navbar should be sticky
+function handleStickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// Attach an event listener to the "scroll" event
+window.addEventListener("scroll", handleStickyNavbar);
+
 navBtn.addEventListener('click', () => {
   navList.classList.remove('hide');
   navList.classList.add('mobile-menu');
