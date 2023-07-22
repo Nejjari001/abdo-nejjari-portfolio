@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
   To clone and run this project on your machine please follow the instructions: 
 
 1. On your GIT bash run \
-`git clone https://github.com/ouasamine/portfolio.git`
+`git clone https://github.com/Nejjari001/abdo-nejjari-portfolio.git`
 
 2. Browse to the project directory \
 `cd portfolio/`
