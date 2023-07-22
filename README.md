@@ -37,11 +37,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Amine**
+👤 **Abdo**
 
-- GitHub: [@ouasamine](https://github.com/ouasamine)
-- Twitter: [@ouass_amine](https://twitter.com/ouass_amine)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amine-ouassef)
+- GitHub: [@ouasamine](https://github.com/nejjari001)
+- Twitter: [@ouass_amine](https://twitter.com/@AbdoNJ19)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdelhafid-nejjari)
 
 ## 🤝 Contributing
 
